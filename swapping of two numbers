@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{   int a,b;                                                     //declaring two variables that to be swapped
+    printf("Enter two numbers that need to be swapped:\n");      //reading two numbers from the user.
+    scanf("%d %d",&a,&b);                                        //storing the values at the corresponding location in the memory
+    printf("numbers before swapping are a:%d,b:%d\n",a,b);       //displaying the numbers to the console before swapping
+    a=a+b;
+    b=a-b;                                                       //code for swapping.
+    a=a-b;
+    printf("numbers after swapping are a:%d,b:%d\n",a,b);        //displaying the numbers to the console after swapping 
+    return 0;
+}
